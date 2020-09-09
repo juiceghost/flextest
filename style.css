@@ -1,0 +1,17 @@
+* {
+    border: 1px solid grey;
+}
+
+.box {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#wide {
+    min-width: 200px;
+}
+.box > div {
+    min-width: 100px;
+
+}
+
