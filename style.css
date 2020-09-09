@@ -4,14 +4,24 @@
 
 .box {
     display: flex;
-    flex-flow: column wrap;
+    /* flex-wrap: wrap; */
+    min-height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#wide {
-    min-width: 200px;
+/* #wide {
+    min-width: 100px;
 }
 .box > div {
     min-width: 100px;
+    /* flex-grow: 1; 
+} */
 
+.box > div:first-child {
+    flex: initial;
 }
 
+.box > div:not(:first-child) {
+    flex: 0 1 100px;
+}
